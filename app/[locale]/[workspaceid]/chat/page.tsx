@@ -9,8 +9,8 @@ import { QuickSettings } from "@/components/chat/quick-settings"
 import { Brand } from "@/components/ui/brand"
 import { ChatbotUIContext } from "@/context/context"
 import useHotkey from "@/lib/hooks/use-hotkey"
-import { useTheme } from "next-themes"
-import { useContext } from "react"
+import { useTheme } from "@/next-themes/src"
+import { useContext } from "@/react"
 
 export default function ChatPage() {
   useHotkey("o", () => handleNewChat())
