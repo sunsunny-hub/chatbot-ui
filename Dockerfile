@@ -10,6 +10,7 @@ RUN npm ci
 # ---- Build ----
 FROM dependencies AS build
 COPY . .
+RUN npm install
 RUN npm run build
 
 # ---- Production ----
